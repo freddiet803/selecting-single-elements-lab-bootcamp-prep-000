@@ -22,12 +22,11 @@ Go ahead and select the JavaScript tab and you'll see some JavaScript code
 
 ```javascript
 //Enter querySelector Code here
-var header = "ENTER HEADER CODE HERE"
-var linkText = "ENTER LINK TEXT CODE HERE"
-var linkHref = "ENTER LINK HREF CODE HERE"
+var header = document.querySelector("#header").innerHTML;
+var linkText = document.querySelector("a").text;
+var linkHref = document.querySelector("a").href;
 
-
-// NO NEED TO MODIFY BELOW HERE
+//NO NEED TO MODIFY BELOW HERE
 console.log(`The header is: ${header}`)
 console.log(`The first link text is: ${linkText}`)
 console.log(`The first link href is: ${linkHref}`)
